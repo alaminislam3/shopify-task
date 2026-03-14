@@ -68,7 +68,15 @@ border-radius:25px;
 
 .hero-right{
 display:flex;
-gap:20px;
+justify-content:center;
+align-items:center;
+}
+
+.hero-right img{
+width:100%;
+max-width:420px;
+height:auto;
+display:block;
 }
 
 .video-card{
@@ -86,6 +94,7 @@ background:white;
 padding:22px;
 border-radius:16px;
 max-width:520px;
+margin-right: 190px;
 }
 
 .social-icons{
@@ -108,39 +117,43 @@ font-size:12px;
 /* TABLET */
 
 @media (max-width:900px){
+  .hero-wrapper{
+    flex-direction: column;
+    text-align: center;
+  }
 
-.hero-wrapper{
-flex-direction:column;
-text-align:center;
-}
+  .hero-right{
+    margin-top: 30px;
+  }
 
-.hero-right{
-margin-top:30px;
-}
-
-.social-proof{
-margin:auto;
-margin-top:40px;
-}
-
+  .social-proof{
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-top: 40px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* MOBILE */
-
 @media (max-width:600px){
+  .hero-left h1{
+    font-size: 32px;
+  }
 
-.hero-left h1{
-font-size:32px;
-}
+  .hero-buttons{
+    flex-direction: column;
+    align-items: center;
+  }
 
-.hero-buttons{
-flex-direction:column;
-align-items:center;
-}
+  .video-card{
+    width: 150px;
+    height: 260px;
+  }
 
-.video-card{
-width:150px;
-height:260px;
-}
-
+  .social-proof{
+    max-width: 90%;
+  }
 }
