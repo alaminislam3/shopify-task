@@ -1,0 +1,237 @@
+/* =========================================
+   FOOTER SECTION
+   footer.css — add to your CSS folder
+   ========================================= */
+
+.footer {
+  background: #ffffff;
+  border-top: 1px solid #E5E7EB;
+  padding: 64px 0 0;
+}
+
+.footer-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1.6fr 0.8fr 0.8fr 1.4fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* ── Column 1: Brand ── */
+.footer-brand {}
+
+.footer-logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1A1A2E;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.footer-brand h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1A1A2E;
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  font-size: 0.875rem;
+  color: #6B7280;
+  line-height: 1.75;
+  margin-bottom: 28px;
+}
+
+.footer-brand-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footer-btn-login {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1A1A2E;
+  background: transparent;
+  border: 1.5px solid #D1D5DB;
+  border-radius: 999px;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: border-color 0.25s, color 0.25s;
+}
+
+.footer-btn-login:hover {
+  border-color: #7C3AED;
+  color: #7C3AED;
+}
+
+.footer-btn-demo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #7C3AED, #9D5CF6);
+  border: none;
+  border-radius: 999px;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: opacity 0.25s, transform 0.2s;
+}
+
+.footer-btn-demo:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+/* ── Columns 2 & 3: Links ── */
+.footer-links h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1A1A2E;
+  margin-bottom: 20px;
+}
+
+.footer-links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links ul li a {
+  font-size: 0.875rem;
+  color: #6B7280;
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.footer-links ul li a:hover {
+  color: #7C3AED;
+}
+
+/* ── Column 4: Contact Form ── */
+.footer-contact h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1A1A2E;
+  margin-bottom: 16px;
+}
+
+.footer-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-input {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  color: #374151;
+  background: #F9FAFB;
+  border: 1.5px solid #E5E7EB;
+  border-radius: 10px;
+  padding: 12px 16px;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.footer-input::placeholder {
+  color: #9CA3AF;
+}
+
+.footer-input:focus {
+  border-color: #7C3AED;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+  background: #fff;
+}
+
+.footer-textarea {
+  resize: none;
+  min-height: 90px;
+}
+
+.footer-submit {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #1A1A2E;
+  border: none;
+  border-radius: 10px;
+  padding: 13px 20px;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.25s, transform 0.2s;
+}
+
+.footer-submit:hover {
+  background: #7C3AED;
+  transform: translateY(-1px);
+}
+
+.footer-submit svg {
+  width: 16px;
+  height: 16px;
+  stroke: white;
+}
+
+/* ── Bottom Bar ── */
+.footer-bottom {
+  margin-top: 52px;
+  border-top: 1px solid #E5E7EB;
+  padding: 20px 24px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 0.82rem;
+  color: black;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .footer-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-contact {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 520px) {
+  .footer {
+    padding: 48px 0 0;
+  }
+
+  .footer-wrapper {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-contact {
+    grid-column: auto;
+  }
+}
