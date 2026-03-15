@@ -3,18 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
 
-<title>Landing Page</title>
+<title>Raaya Social</title>
 
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/navbar.css">
 <link rel="stylesheet" href="css/hero.css">
 <link rel="stylesheet" href="css/pricing.css">
 <link rel="stylesheet" href="css/services.css">
-
+<link rel="stylesheet" href="css/shortvideo.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    
 
 <!-- NAVBAR -->
 
@@ -22,8 +25,8 @@
 
 <div class="container nav-wrapper">
 
-<div class="logo">
-RAAYA <span>SOCIAL</span>
+<div class="">
+<img class="navlogo" src="assets/navlogo.png" alt="Raaya social logo">
 </div>
 
 <nav class="nav-links">
@@ -54,13 +57,13 @@ RAAYA <span>SOCIAL</span>
 <div class="hero-left">
 
 <div class="badge">
-⭐ All talents across the world
+  ★ All talents across the world
 </div>
 
 <h1>
 Create <span>Short-Form</span> <br>
 <span>Video Content</span> starting <br>
-at <span class="price">$99</span>/month.
+at <span id="price">$99</span>/month.
 </h1>
 
 <p>
@@ -84,7 +87,7 @@ only upon your approval.
 </div>
 
 
-<div class="container social-proof">
+<!-- <div class="container social-proof">
 
   <p class="social-text">Social channel we work with</p>
 
@@ -92,7 +95,7 @@ only upon your approval.
     <img src="assets/social.png" alt="Social Platforms">
   </div>
 
-</div>
+</div> -->
 
 <!-- CLIENTS SECTION -->
 
@@ -205,96 +208,189 @@ only upon your approval.
 
   </div>
 
+  <section class="services">
+  
+    <div class="container services-wrapper">
+  
+      <div class="services-header">
+        <h2>Turn your raw video into <span>engaging clip</span></h2>
+      </div>
+  
+      <div class="services-top-grid">
+  
+        <div class="service-card service-card-image">
+          <div class="service-card-title">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <p>We take raw video and/or premium stock footage</p>
+          </div>
+          <div class="service-img">
+            <img src="assets/rawvideo.png" alt="Raw video footage">
+          </div>
+          <p class="service-desc">Share your long-form videos or raw clips with us. Our team will help you choose the best hooks & content from your video. Our team will help you choose the best hooks & content from your video.</p>
+        </div>
+  
+        <div class="service-card service-card-image">
+          <div class="service-card-title">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <p>We structure it for views and watch-time</p>
+          </div>
+          <div class="service-img">
+            <img src="assets/rawvideo.png" alt="Video structure">
+          </div>
+          <p class="service-desc">Share your long-form videos or raw clips with us. Our team will help you choose the best hooks & content from your video. Our team will help you choose the best hooks & content from your video.</p>
+        </div>
+  
+        <div class="service-card service-card-image">
+          <div class="service-card-title">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <p>We create your unique style and theme</p>
+          </div>
+          <div class="service-img">
+            <img src="assets/rawvideo.png" alt="Unique style">
+          </div>
+          <p class="service-desc">Share your long-form videos or raw clips with us. Our team will help you choose the best hooks & content from your video. Our team will help you choose the best hooks & content from your video.</p>
+        </div>
+  
+      </div>
+  
+      <div class="services-bottom-grid">
+  
+        <div class="service-card service-card-plain">
+          <h4>Instagram Reels</h4>
+          <p class="service-desc">Share your long-form videos or raw clips with us. Our team will help you choose the best hooks & content from your video.</p>
+        </div>
+  
+        <div class="service-card service-card-plain">
+          <h4>Tik Tok videos</h4>
+          <p class="service-desc">Share your long-form videos or raw clips with us. Our team will help you choose the best hooks & content from your video.</p>
+        </div>
+  
+        <div class="service-card service-card-plain">
+          <h4>YouTube shorts</h4>
+          <p class="service-desc">Share your long-form videos or raw clips with us. Our team will help you choose the best hooks & content from your video.</p>
+        </div>
+  
+        <div class="service-card service-card-plain">
+          <h4>Instagram Reels</h4>
+          <p class="service-desc">Share your long-form videos or raw clips with us. Our team will help you choose the best hooks & content from your video.</p>
+        </div>
+  
+        <div class="service-card service-card-plain">
+          <h4>Educational shorts</h4>
+          <p class="service-desc">Share your long-form videos or raw clips with us. Our team will help you choose the best hooks & content from your video.</p>
+        </div>
+  
+        <div class="service-card service-card-plain">
+          <h4>Instagram Reels</h4>
+          <p class="service-desc">Share your long-form videos or raw clips with us. Our team will help you choose the best hooks & content from your video.</p>
+        </div>
+
+        
+  
+      </div>
+      <div class="portfolio-block">
+
+  <div class="portfolio-row">
+    <h3 class="portfolio-title">Videos <span class="portfolio-toggle">🎬 For</span> <span>business</span></h3>
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <img src="assets/rawvideo.png" alt="Health & Wealth">
+        <div class="play-btn">▶</div>
+        <p>Health & Wealth</p>
+      </div>
+      <div class="portfolio-card">
+        <img src="assets/rawvideo.png" alt="Financial services">
+        <div class="play-btn">▶</div>
+        <p>Financial services</p>
+      </div>
+      <div class="portfolio-card">
+        <img src="assets/rawvideo.png" alt="Real estate">
+        <div class="play-btn">▶</div>
+        <p>Real estate</p>
+      </div>
+      <div class="portfolio-card">
+        <img src="assets/rawvideo.png" alt="Home services">
+        <div class="play-btn">▶</div>
+        <p>Home services</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-row">
+    <h3 class="portfolio-title">Videos <span class="portfolio-toggle">🎬 For</span> <span>personal brands</span></h3>
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <img src="assets/rawvideo.png" alt="Health & Wealth">
+        <div class="play-btn">▶</div>
+        <p>Health & Wealth</p>
+      </div>
+      <div class="portfolio-card">
+        <img src="assets/rawvideo.png" alt="Financial services">
+        <div class="play-btn">▶</div>
+        <p>Financial services</p>
+      </div>
+      <div class="portfolio-card">
+        <img src="assets/rawvideo.png" alt="Real estate">
+        <div class="play-btn">▶</div>
+        <p>Real estate</p>
+      </div>
+      <div class="portfolio-card">
+        <img src="assets/rawvideo.png" alt="Home services">
+        <div class="play-btn">▶</div>
+        <p>Home services</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+  
+    </div>
+    
+    
+  </div>
+  
 </section>
 
-<section class="services">
+<!-- SHORT FORM VIDEO SECTION -->
 
-  <div class="container services-wrapper">
+<section class="short-video">
+  <div class="container short-video-wrapper">
 
-    <div class="services-header">
-      <h2>Turn your raw video into <span>engaging clip</span></h2>
+    <div class="short-video-image">
+      <img src="assets/shortvideo.png" alt="Short form creator">
     </div>
 
-    <div class="services-top-grid">
+    <div class="short-video-content">
+      <h2>Why is short-form video so popular?</h2>
 
-      <div class="service-card service-card-image">
-        <div class="service-card-title">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-          </div>
-          <p>We take raw video and/or premium stock footage</p>
-        </div>
-        <div class="service-img">
-          <img src="assets/rawvideo.png" alt="Raw video footage">
-        </div>
-        <p class="service-desc">Share your long-form videos or raw clips with us. Our team will help you choose the best hooks & content from your video. Our team will help you choose the best hooks & content from your video.</p>
-      </div>
+      <p>
+        Video content in the short form is not new. In actuality, the 2012-released 
+        short-form video app Vine was a pioneer of the genre.
+      </p>
 
-      <div class="service-card service-card-image">
-        <div class="service-card-title">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-          </div>
-          <p>We structure it for views and watch-time</p>
-        </div>
-        <div class="service-img">
-          <img src="assets/rawvideo.png" alt="Video structure">
-        </div>
-        <p class="service-desc">Share your long-form videos or raw clips with us. Our team will help you choose the best hooks & content from your video. Our team will help you choose the best hooks & content from your video.</p>
-      </div>
+      <p>
+        But as tech giants like Instagram, TikTok, and YouTube launched short-form 
+        video features of their own, what had initially been a niche platform grew 
+        into something much larger.
+      </p>
 
-      <div class="service-card service-card-image">
-        <div class="service-card-title">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-          </div>
-          <p>We create your unique style and theme</p>
-        </div>
-        <div class="service-img">
-          <img src="assets/rawvideo.png" alt="Unique style">
-        </div>
-        <p class="service-desc">Share your long-form videos or raw clips with us. Our team will help you choose the best hooks & content from your video. Our team will help you choose the best hooks & content from your video.</p>
-      </div>
-
-    </div>
-
-    <div class="services-bottom-grid">
-
-      <div class="service-card service-card-plain">
-        <h4>Instagram Reels</h4>
-        <p class="service-desc">Share your long-form videos or raw clips with us. Our team will help you choose the best hooks & content from your video.</p>
-      </div>
-
-      <div class="service-card service-card-plain">
-        <h4>Tik Tok videos</h4>
-        <p class="service-desc">Share your long-form videos or raw clips with us. Our team will help you choose the best hooks & content from your video.</p>
-      </div>
-
-      <div class="service-card service-card-plain">
-        <h4>YouTube shorts</h4>
-        <p class="service-desc">Share your long-form videos or raw clips with us. Our team will help you choose the best hooks & content from your video.</p>
-      </div>
-
-      <div class="service-card service-card-plain">
-        <h4>Instagram Reels</h4>
-        <p class="service-desc">Share your long-form videos or raw clips with us. Our team will help you choose the best hooks & content from your video.</p>
-      </div>
-
-      <div class="service-card service-card-plain">
-        <h4>Educational shorts</h4>
-        <p class="service-desc">Share your long-form videos or raw clips with us. Our team will help you choose the best hooks & content from your video.</p>
-      </div>
-
-      <div class="service-card service-card-plain">
-        <h4>Instagram Reels</h4>
-        <p class="service-desc">Share your long-form videos or raw clips with us. Our team will help you choose the best hooks & content from your video.</p>
-      </div>
+      <button class="short-demo-btn">Book a demo</button>
 
     </div>
 
   </div>
+</section>
 
 </section>
+
+
+
 
 </section>
 

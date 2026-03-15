@@ -98,6 +98,79 @@
   margin-bottom: 10px;
 }
 
+.portfolio-block {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.portfolio-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.portfolio-title span {
+  color: #7b3fe4;
+}
+
+.portfolio-toggle {
+  display: inline-block;
+  background: #eee;
+  color: #111;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin: 0 6px;
+  vertical-align: middle;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.portfolio-card {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.portfolio-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #111;
+}
+
+.portfolio-card p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #444;
+  text-align: center;
+}
+
 @media (max-width: 900px) {
   .services-top-grid,
   .services-bottom-grid {
@@ -106,6 +179,14 @@
 
   .services-header h2 {
     font-size: 26px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-title {
+    font-size: 20px;
   }
 }
 
@@ -121,5 +202,19 @@
 
   .services-header h2 {
     font-size: 22px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .portfolio-title {
+    font-size: 18px;
+  }
+
+  .portfolio-toggle {
+    font-size: 11px;
+    padding: 3px 8px;
   }
 }

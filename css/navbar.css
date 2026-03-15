@@ -15,6 +15,11 @@ font-weight:700;
 font-size:20px;
 }
 
+.navlogo{
+    height: 40px;
+    width: 60px;
+}
+
 .logo span{
 color:#7b3fe4;
 }
@@ -64,9 +69,7 @@ display:none;
 
 @media (max-width:600px){
 
-.logo{
-font-size:18px;
-}
+
 
 .login{
 display:none;
