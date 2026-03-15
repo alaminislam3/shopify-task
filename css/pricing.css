@@ -1,0 +1,202 @@
+.pricing {
+  padding: 80px 0;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.pricing-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 14px;
+  color: #111;
+}
+
+.pricing-header h2 span {
+  color: #7b3fe4;
+}
+
+.pricing-header p {
+  color: #666;
+  font-size: 14px;
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.pricing-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+}
+
+.pricing-left {
+  flex: 1;
+  max-width: 380px;
+}
+
+.pricing-icon img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+}
+
+.pricing-left h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  color: #111;
+}
+
+.pricing-feature {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 22px;
+  align-items: flex-start;
+}
+
+.feature-check {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  color: #7b3fe4;
+  margin-top: 2px;
+}
+
+.feature-check svg {
+  width: 22px;
+  height: 22px;
+}
+
+.feature-text strong {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+.feature-text p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.pricing-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.plan-option {
+  border: 1.5px solid #e5e5e5;
+  border-radius: 14px;
+  padding: 20px 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  background: white;
+}
+
+.plan-popular {
+  border-color: #7b3fe4;
+}
+
+.plan-badge {
+  position: absolute;
+  top: -11px;
+  left: 16px;
+  background: #111;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.plan-radio {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  flex-shrink: 0;
+}
+
+.plan-radio-checked {
+  background: #7b3fe4;
+  border-color: #7b3fe4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan-radio-checked svg {
+  width: 13px;
+  height: 13px;
+}
+
+.plan-details h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.plan-details p {
+  font-size: 13px;
+  color: #888;
+  margin: 0;
+}
+
+.pricing-cta {
+  text-align: center;
+  margin-top: 36px;
+}
+
+.get-started {
+  background: #7b3fe4;
+  color: white;
+  border: none;
+  padding: 14px 36px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .pricing-card {
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .pricing-left {
+    max-width: 100%;
+  }
+
+  .pricing-header h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pricing {
+    padding: 50px 0;
+  }
+
+  .pricing-card {
+    padding: 24px;
+  }
+
+  .pricing-header h2 {
+    font-size: 24px;
+  }
+}

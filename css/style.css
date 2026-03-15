@@ -19,3 +19,46 @@ margin:auto;
 button{
 cursor:pointer;
 }
+
+/* CLIENTS SECTION */
+
+.clients{
+  background:#f3f3f3;
+  padding:30px 0;
+}
+
+.clients-wrapper{
+  display:flex;
+  align-items:center;
+  gap:40px;
+}
+
+/* LEFT TEXT */
+
+.clients-left h3{
+  font-size:28px;
+  margin:0;
+}
+
+.clients-left p{
+  color:#666;
+  font-size:14px;
+}
+
+/* DIVIDER */
+
+.clients-divider{
+  width:1px;
+  height:60px;
+  background:#ccc;
+}
+
+/* LOGOS */
+
+.clients-logos img{
+  width:100%;
+  max-width:600px;
+  height:auto;
+  display:block;
+}
+

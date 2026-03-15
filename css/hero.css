@@ -135,6 +135,20 @@ font-size:12px;
     margin-left: auto;
     margin-right: auto;
   }
+
+    .clients-wrapper{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .clients-divider{
+    width:80px;
+    height:1px;
+  }
+
+  .clients-logos img{
+    max-width:100%;
+  }
 }
 
 /* MOBILE */
@@ -156,4 +170,13 @@ font-size:12px;
   .social-proof{
     max-width: 90%;
   }
+
+  .clients-left h3{
+    font-size:24px;
+  }
+
+  .clients-left p{
+    font-size:13px;
+  }
+
 }
